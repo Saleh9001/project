@@ -1,0 +1,137 @@
+<html dir="rtl">
+    <head>
+        <div class='ind-darkmode'><input class='check' id='ind-darkmode' title='Mode Dark' type='checkbox'/> <label class='ind-icon' for='ind-darkmode'> <svg class='openmode' viewBox='0 0 24 24'><path d='M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z'/></svg> <svg class='closemode' viewBox='0 0 24 24'><path d='M14.3,16L13.6,14H10.4L9.7,16H7.8L11,7H13L16.2,16H14.3M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69M10.85,12.65H13.15L12,9L10.85,12.65Z'/></svg> </label> </div>
+ <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script>
+
+    <title>    صفحة لعبة اكشن    </title>
+    </head>
+      <style>
+.ind-darkmode{
+       display:inline-block;
+       float: left;
+       margin-top: 10px;
+       position:static;
+       margin-left: 50px;
+       top: 0;
+       z-index:999;
+} 
+.ind-darkmode svg{ 
+       width:24px;
+       height:24px;
+       vertical-align: -5px; 
+       background-repeat: no-repeat !important; 
+       content: &#39;&#39;; } 
+.ind-darkmode svg path{ 
+       fill:#000;
+} 
+.ind-darkmode .check:checked ~ .NavMenu{
+        is opacity:1; 
+        visibility:visible; 
+        top:45px; 
+        min-width:200px; 
+        transition:all .3s ease; 
+        z-index:2;
+} 
+.ind-icon { 
+       cursor: pointer; 
+       display: block;
+       padding: 8px; 
+       background-position: center;
+       transition: all .5s linear; 
+} 
+.ind-icon:hover{  
+         border-radius: 100px; 
+         background: rgba(0,0,0,.2) radial-gradient(circle, transparent 2%, rgba(0,0,0,.2) 2%) center/15000%;
+} 
+.check { 
+   display: none;
+} 
+.ind-darkmode .ind-icon .openmode{ 
+   display:block;
+} 
+.ind-darkmode .ind-icon .closemode{ 
+   display:none; } 
+.ind-darkmode .check:checked ~ .ind-icon .openmode{ 
+   display:none;
+}
+.ind-darkmode .check:checked ~ .ind-icon .closemode{
+   display:block;
+}
+.Night {
+   background: #353535;
+}
+
+</style>
+    
+    <style>
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: darkgrey;
+}
+
+h2 {
+  text-indent: 50px;
+  text-align: justify;
+ font-weight: bolder;
+  letter-spacing: 3px;
+    color: darkgrey;
+}
+
+h3 {
+  text-decoration: none;
+  color: firebrick;
+}
+        body {
+  background-color: rgb(236, 233, 233);
+}
+</style>
+<div>
+<h1> لعبة Aliens Attack
+</h1>
+
+    <body>
+ <h2>وصف اللعبة</h2>
+ <h3>
+    
+    الأجانب يغزوون الأرض! الآن الأمر متروك لك لإنقاذ 
+    البشرية ودرء الدخلاء بين المجرات. احم الكوكب، وأطلق
+     النار على أكبر عدد ممكن من الأعداء واحذر من الرؤساء
+     الأقوياء. هل يمكنك فتح جميع الأبطال وإنقاذ العالم؟
+
+</h3>
+    <br> 
+    <a href="https://www.youtube.com/watch?v=4lzDEPKqP" alt="عذرا الفديو غير متوفر">
+        لمشاهدة فديو عن اللعبة
+    </a>
+    <br> 
+    <br> 
+    <a href="https://play.famobi.com/aliens-attack">
+     انقر هنا لبدء اللعبة
+    </a>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    Details
+    <br> 
+    <br>
+    المطور:Famobi
+    <br> 
+    <br>
+    التقيم: 4.5
+</div>
+    
+
+         <script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function(){$("body").toggleClass(localStorage.toggled),$("#ind-darkmode").on("click",function(){"Night"!=localStorage.toggled?($("body").toggleClass("Night",!0),localStorage.toggled="Night",$(".section-center").css("display","block")):($("body").toggleClass("Night",!1),localStorage.toggled="",$(".section-center").css("display",""))}),$("body").hasClass("Night")?$("#ind-darkmode").prop("checked",!0):$("#ind-darkmode").prop("checked",!1)});
+//]]>
+</script>
+    </body>
+</html>
